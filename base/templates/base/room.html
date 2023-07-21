@@ -1,0 +1,25 @@
+{% extends 'main.html' %}
+
+
+{% block content%}
+
+<h1>
+    {{room.name}}
+</h1>
+
+<div>
+
+    <div>
+        {% for room in rooms %}
+            <div>
+                <h3>
+                    {{room.name}}
+                </h3>
+
+            </div>
+        {% endfor %}
+    </div>
+
+</div>
+
+{% endblock content%}
