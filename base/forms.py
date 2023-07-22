@@ -3,4 +3,5 @@ from .models import Room
 
 class RoomForm(ModelForm):
     class Meta:
-        pass
+        model = Room
+        fields = '__all__'
